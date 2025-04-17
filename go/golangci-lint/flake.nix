@@ -52,6 +52,21 @@
       sha256 = "ppTxnb+rPqTTlWyxBdLnTB3EnLTAbs6QOjxTS86Gs9w=";
     };
 
+    v_1_54_1 = buildGolangCi {
+      version = "1.54.1";
+      sha256 = "14ljxg3qmzhw4iv6zmqk914yckcw5ymr1dfrayd0sxs3bp61j60c";
+    };
+
+    v_1_54_2 = buildGolangCi {
+      version = "1.54.2";
+      sha256 = "1csjfi6bvykkk2lpjn2iwssh48md19ksz37k8wyq7ziy4l2wmj8p";
+    };
+
+    v_1_55_0 = buildGolangCi {
+      version = "1.55.0";
+      sha256 = "0yjkl08c1jkz7pvg8k84ln8sq55vrnvqm4zq4zx01s641admfy92";
+    };
+
     v_1_64_2 = buildGolangCi {
       version = "1.64.2";
       sha256 = "qJPnySEfcKDLjFEhq4DVsIkQnCOva8KSOCC6i0I2UHI=";
@@ -60,6 +75,11 @@
     v_1_64_5 = buildGolangCi {
       version = "1.64.5";
       sha256 = "5r05mgR5xf2Ebc+fOZDSBEi08NHlAn2CNI6rn4D3rHE=";
+    };
+
+    v_1_64_6 = buildGolangCi {
+      version = "1.64.6";
+      sha256 = "138l2n5w9z6pvhxnz2mc6r1hq66wfkxl01cgysj3nyybpan91qki";
     };
 
     v_1_64_7 = buildGolangCi {
@@ -121,10 +141,16 @@
     packages.${system} = {
       # v1.54.x
       v-1-54-0 = v_1_54_0;
+      v-1-54-1 = v_1_54_1;
+      v-1-54-2 = v_1_54_2;
+
+      # v1.55.x
+      v-1-55-0 = v_1_55_0;
 
       # v1.64.x
       v-1-64-2 = v_1_64_2;
       v-1-64-5 = v_1_64_5;
+      v-1-64-6 = v_1_64_6;
       v-1-64-7 = v_1_64_7;
       v-1-64-8 = v_1_64_8;
 
@@ -140,10 +166,16 @@
     devShells.${system} = {
       # v1.54.x
       v-1-54-0 = mkShell v_1_54_0;
+      v-1-54-1 = mkShell v_1_54_1;
+      v-1-54-2 = mkShell v_1_54_2;
+
+      # v1.55.x
+      v-1-55-0 = mkShell v_1_55_0;
 
       # v1.64.x
       v-1-64-2 = mkShell v_1_64_2;
       v-1-64-5 = mkShell v_1_64_5;
+      v-1-64-6 = mkShell v_1_64_6;
       v-1-64-7 = mkShell v_1_64_7;
 
       # v2.0.x
