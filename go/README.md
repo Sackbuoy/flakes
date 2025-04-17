@@ -52,6 +52,8 @@ cat > flake.nix << EOF
             go-flake.packages.\${system}.\${goPackage}
             pkgs.delve
             pkgs.bashInteractive
+            pkgs.gopls
+            pkgs.gotools
           ];
 
           CGO_CFLAGS = "-O2";
