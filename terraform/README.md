@@ -40,6 +40,7 @@ cat > flake.nix << EOF
       buildInputs = [
         terraform
         pkgs.tflint
+        pkgs.terraform-ls
       ];
     };
   };
