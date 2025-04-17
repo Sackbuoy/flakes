@@ -67,6 +67,26 @@
       sha256 = "0yjkl08c1jkz7pvg8k84ln8sq55vrnvqm4zq4zx01s641admfy92";
     };
 
+    v_1_60_1 = buildGolangCi {
+      version = "1.60.1";
+      sha256 = "1nn90piag2sb7hby1sz78z20q9s552ixza75r7c48ff8brkh7a06";
+    };
+
+    v_1_60_2 = buildGolangCi {
+      version = "1.60.2";
+      sha256 = "096iabivn8j4l0hd7zlxdqw9jy7q5sq653k8w26si6jix0nyjyv0";
+    };
+
+    v_1_60_3 = buildGolangCi {
+      version = "1.60.3";
+      sha256 = "1vq6p2yh61829qq5l3z8ikzlgwal3r3jm1blv0g407w74a0syds0";
+    };
+
+    v_1_61_0 = buildGolangCi {
+      version = "1.61.0";
+      sha256 = "04a1lp1m1iccbq5y7wyj3fh69s30s1j87hy8blfs5nbrjgwhmjvp";
+    };
+
     v_1_64_2 = buildGolangCi {
       version = "1.64.2";
       sha256 = "qJPnySEfcKDLjFEhq4DVsIkQnCOva8KSOCC6i0I2UHI=";
@@ -147,6 +167,14 @@
       # v1.55.x
       v-1-55-0 = v_1_55_0;
 
+      # v1.60.x
+      v-1-60-1 = v_1_60_1;
+      v-1-60-2 = v_1_60_2;
+      v-1-60-3 = v_1_60_3;
+
+      # v1.61.x
+      v-1-61-0 = v_1_61_0;
+
       # v1.64.x
       v-1-64-2 = v_1_64_2;
       v-1-64-5 = v_1_64_5;
@@ -171,6 +199,14 @@
 
       # v1.55.x
       v-1-55-0 = mkShell v_1_55_0;
+
+      # v1.60.x
+      v-1-60-1 = mkShell v_1_60_1;
+      v-1-60-2 = mkShell v_1_60_2;
+      v-1-60-3 = mkShell v_1_60_3;
+
+      # v1.61.x
+      v-1-61-0 = v_1_61_0;
 
       # v1.64.x
       v-1-64-2 = mkShell v_1_64_2;
