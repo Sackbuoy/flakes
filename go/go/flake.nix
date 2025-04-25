@@ -317,9 +317,14 @@
       sha256 = "cb2396bae64183cdccf81a9a6df0aea3bce9511fc21469fb89a0c00470088073";
     };
 
+    go_1_24_2 = buildGo {
+      version = "1.24.2";
+      sha256 = "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad";
+    };
+
     latest = buildGo {
-      version = "1.24.1";
-      sha256 = "cb2396bae64183cdccf81a9a6df0aea3bce9511fc21469fb89a0c00470088073";
+      version = "1.24.2";
+      sha256 = "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad";
     };
 
     # Function to generate a devShell for a specific Go version
@@ -413,6 +418,7 @@
       # go 1.24.x
       go-1-24-0 = go_1_24_0;
       go-1-24-1 = go_1_24_1;
+      go-1-24-2 = go_1_24_2;
       # Default package
       latest = latest;
       default = latest;
@@ -480,6 +486,7 @@
 
       go-1-24-0 = mkGoShell go_1_24_0;
       go-1-24-1 = mkGoShell go_1_24_1;
+      go-1-24-2 = mkGoShell go_1_24_2;
       # Default shell
       latest = mkGoShell latest;
       default = mkGoShell latest;
