@@ -127,9 +127,14 @@
       sha256 = "icyKeBDcY7mjeQDaA+N8NgHK9G1CJl13Tg8aXYg9U+I=";
     };
 
+    v_2_3_1 = buildGolangCi {
+      version = "2.3.1";
+      sha256 = "V8OkxWuDY/fx9pWslXsLtHSsoAxJC8XpSWaabCulxDI=";
+    };
+
     latest = buildGolangCi {
-      version = "2.0.2";
-      sha256 = "icyKeBDcY7mjeQDaA+N8NgHK9G1CJl13Tg8aXYg9U+I=";
+      version = "2.3.1";
+      sha256 = "V8OkxWuDY/fx9pWslXsLtHSsoAxJC8XpSWaabCulxDI=";
     };
 
     # Function to generate a devShell for a specific version
@@ -186,6 +191,10 @@
       v-2-0-0 = v_2_0_0;
       v-2-0-1 = v_2_0_1;
       v-2-0-2 = v_2_0_2;
+
+      # v2.3.x
+      v-2-3-1 = v_2_3_1;
+
       # Default package
       latest = latest;
       default = latest;
@@ -218,6 +227,10 @@
       v-2-0-0 = mkShell v_2_0_0;
       v-2-0-1 = mkShell v_2_0_1;
       v-2-0-2 = mkShell v_2_0_2;
+
+      # v2.3.x
+      v-2-3-1 = v_2_3_1;
+
       # Default shell
       latest = mkShell latest;
       default = mkShell latest;
